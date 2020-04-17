@@ -3,8 +3,19 @@
 if [ -z "$1" ]
 then
       echo "No arg specified - exiting"
+      exit
 else
       echo "Will create $1"
+fi
+
+if [[ -f "$1" ]]; then
+    echo "$1 exists - exiting"
+    exit
+fi
+
+if [[ -d "$1" ]]; then
+    echo "$1 exists - exiting"
+    exit
 fi
 
 TMPFILE=`mktemp`
