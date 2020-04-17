@@ -1,6 +1,6 @@
 #!/bin/bash
 TMPFILE=`mktemp`
-curl -L0 $TMPFILE https://github.com/intbio/pypkg_example/archive/master.zip
+curl -Lo $TMPFILE https://github.com/intbio/pypkg_example/archive/master.zip
 unzip $TMPFILE
 rm $TMPFILE
 mv pypkg_example-master $1
