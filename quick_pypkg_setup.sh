@@ -14,7 +14,7 @@ sed -i.bak "s/\'foo/#\'foo/" setup.py
 sed -i.bak "s/\'bar/#\'bar/" setup.py
 rm setup.py.bak
 sed -i.bak "s/expkg/$1/" MANIFEST.in
-rm setup.py.bak
+rm MANIFEST.in.bak
 
 sed -i.bak "s/pypkg_example/$1/" conda_recipe/meta.yml
 sed -i.bak "s/expkg/$1/" conda_recipe/meta.yml
