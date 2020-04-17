@@ -24,6 +24,7 @@ unzip $TMPFILE
 rm $TMPFILE
 mv pypkg_example-master $1
 cd $1
+rm quick_pypkg_setup.sh
 mv expkg $1
 echo "0.0.1" > VERSION
 sed -i.bak "s/pypkg_example/$1/" setup.py
