@@ -16,9 +16,9 @@ rm setup.py.bak
 sed -i.bak "s/expkg/$1/" MANIFEST.in
 rm MANIFEST.in.bak
 
-sed -i.bak "s/pypkg_example/$1/" conda_recipe/meta.yml
-sed -i.bak "s/expkg/$1/" conda_recipe/meta.yml
-rm conda_recipe/meta.yml.bak
+sed -i.bak "s/pypkg_example/$1/" conda_recipe/meta.yaml
+sed -i.bak "s/expkg/$1/" conda_recipe/meta.yaml
+rm conda_recipe/meta.yaml.bak 
 
 sed -i.bak "s/pypkg_example/$1/" docker/Dockerfile
 rm docker/Dockerfile.bak
