@@ -23,6 +23,7 @@ docker - you can setup the container later for the useres to use you library.
 
 ## A quick and dirty way of creating a new github repo with via a code snippet
 https://github.com/github/hub should be installed
+GITHUB_TOKEN env variable set [see here](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
 ```
 wget https://raw.githubusercontent.com/intbio/pypkg_example/master/quick_pypkg_setup.sh
 ./quick_pypck_setup.sh PACKAGE_NAME
