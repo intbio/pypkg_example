@@ -1,4 +1,12 @@
 #!/bin/bash
+
+if [ -z "$1" ]
+then
+      echo "No arg specified - exiting"
+else
+      echo "Will create $1"
+fi
+
 TMPFILE=`mktemp`
 curl -Lo $TMPFILE https://github.com/intbio/pypkg_example/archive/master.zip
 unzip $TMPFILE
